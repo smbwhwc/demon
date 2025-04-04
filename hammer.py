@@ -94,7 +94,7 @@ def get_parameters():
 	optp = OptionParser(add_help_option=False,epilog="Hammers")
 	optp.add_option("-q","--quiet", help="set logging to ERROR",action="store_const", dest="loglevel",const=logging.ERROR, default=logging.INFO)
 	optp.add_option("-s","--server", dest="host",help="attack to server ip -s ip")
-	optp.add_option("-p","--port",type="int",dest="port",help="-p 80 default 80")
+	optp.add_option("-p","--port",type="int",dest="port",help="-p 19132 default 19132")
 	optp.add_option("-t","--turbo",type="int",dest="turbo",help="default 135 -t 135")
 	optp.add_option("-h","--help",dest="help",action='store_true',help="help you")
 	opts, args = optp.parse_args()
